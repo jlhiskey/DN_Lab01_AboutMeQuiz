@@ -38,14 +38,36 @@ namespace DN_Lab01_AboutMeQuiz
         }
         
         // Question/Answer Method
+        static string outputQuestionInputAnswer(string question)
+        {
+            // Asks user question
+
+            // Saves user input
+
+        }
 
         // Answer Checker Method
+        static string compareUserInputANDAnswer(string answer, string userInput)
+        {
+            //Compare integer input to integer answer
+
+            //Compare string input to string answer
+
+            //Compare boolean input to boolean answer
+
+        }
 
         // Answer Result Method
+        static void DisplayResults(bool correct, string answer)
+        {
+            // If statement checking for correct answer.
+        }
 
         // Score Keeper
-
-
+        static int scoreTracker(bool correctAnswer)
+        {
+            // If correct add 1 to score
+        }
 
     }
 }
