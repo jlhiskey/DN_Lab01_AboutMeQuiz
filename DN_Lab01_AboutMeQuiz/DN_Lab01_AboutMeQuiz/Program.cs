@@ -47,10 +47,22 @@ namespace DN_Lab01_AboutMeQuiz
 
                 // Show result of answer.
                 DisplayResults(correct, answers[i]);
+
+                // Keep track of score.
+                score = score + scoreTracker(correct);
             }
 
             //Show the users final score.
-            
+            Console.WriteLine($"Quiz Complete: You scored {score}/5.");
+            if (score > 3)
+            {
+                Console.WriteLine($"Great Job {name}!!!");
+            }
+            else
+            {
+                Console.WriteLine($"Try harder next time {name}!!!");
+            }
+            Console.ReadLine();
         }
         
         // Question/Answer Method
@@ -91,10 +103,15 @@ namespace DN_Lab01_AboutMeQuiz
         }
 
         // Score Keeper
-        //static int scoreTracker(bool correctAnswer)
-        //{
-        //    // If correct add 1 to score
-        //}
+        static int scoreTracker(bool correctAnswer)
+        {
+            // If correct add 1 to score
+            if (correctAnswer)
+            {
+                return 1;
+            }
+            else return 0;
+        }
 
     }
 }
