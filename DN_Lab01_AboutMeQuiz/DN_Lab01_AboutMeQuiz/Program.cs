@@ -34,40 +34,54 @@ namespace DN_Lab01_AboutMeQuiz
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
             Console.WriteLine($"Hello {name}! Press Enter when your ready to play.");
-            Console.ReadLine();         
+            Console.ReadLine();
+
+            //Starting The Game
+            for (int i = 0; i < questions.Length; i++)
+            {
+                //Ask question and store answer.
+                string userInput = OutputQuestionInputAnswer(questions[i]);
+               
+            }
+
+            //Display total score to user
+            Console.WriteLine($"Quiz over: You scored {score}/5.");
         }
         
         // Question/Answer Method
-        static string outputQuestionInputAnswer(string question)
+        static string OutputQuestionInputAnswer(string question)
         {
             // Asks user question
+            Console.WriteLine($"--> {question}");
 
             // Saves user input
+            string answer = Console.ReadLine().ToLower();
 
+            return answer;
         }
 
-        // Answer Checker Method
-        static string compareUserInputANDAnswer(string answer, string userInput)
-        {
-            //Compare integer input to integer answer
+        //// Answer Checker Method
+        //static string CompareUserInputANDAnswer(string answer, string userInput)
+        //{
+        //    //Compare integer input to integer answer
 
-            //Compare string input to string answer
+        //    //Compare string input to string answer
 
-            //Compare boolean input to boolean answer
+        //    //Compare boolean input to boolean answer
 
-        }
+        //}
 
-        // Answer Result Method
-        static void DisplayResults(bool correct, string answer)
-        {
-            // If statement checking for correct answer.
-        }
+        //// Answer Result Method
+        //static void DisplayResults(bool correct, string answer)
+        //{
+        //    // If statement checking for correct answer.
+        //}
 
-        // Score Keeper
-        static int scoreTracker(bool correctAnswer)
-        {
-            // If correct add 1 to score
-        }
+        //// Score Keeper
+        //static int scoreTracker(bool correctAnswer)
+        //{
+        //    // If correct add 1 to score
+        //}
 
     }
 }
