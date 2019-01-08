@@ -6,6 +6,13 @@ namespace DN_Lab01_AboutMeQuiz
     {
         static void Main(string[] args)
         {
+            //Questions
+
+            //Answers
+
+            //Score
+
+            // Game Introduction
             Console.WriteLine("Welcome to Jason's Quiz");
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
@@ -13,5 +20,15 @@ namespace DN_Lab01_AboutMeQuiz
             Console.ReadLine();         
         }
         
+        // Question/Answer Method
+
+        // Answer Checker Method
+
+        // Answer Result Method
+
+        // Score Keeper
+
+
+
     }
 }
