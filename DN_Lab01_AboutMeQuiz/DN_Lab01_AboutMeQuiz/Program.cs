@@ -19,10 +19,10 @@ namespace DN_Lab01_AboutMeQuiz
             //Answers
 
             string[] answers = {
-                "Geologist",
-                "True",
-                "Bothell",
-                "True",
+                "geologist",
+                "true",
+                "bothell",
+                "true",
                 "3"
             };
 
@@ -40,8 +40,10 @@ namespace DN_Lab01_AboutMeQuiz
             for (int i = 0; i < questions.Length; i++)
             {
                 //Ask question and store answer.
-                string userInput = OutputQuestionInputAnswer(questions[i]);
-               
+                string inputAnswer = OutputQuestionInputAnswer(questions[i]);
+
+                // Compare userInput to correct answer.
+                bool correct = CompareUserInputANDAnswer(answers[i], inputAnswer);                
             }
 
             //Display total score to user
@@ -60,18 +62,18 @@ namespace DN_Lab01_AboutMeQuiz
             return answer;
         }
 
-        //// Answer Checker Method
-        //static string CompareUserInputANDAnswer(string answer, string userInput)
-        //{
-        //    //Compare integer input to integer answer
+        // Answer Checker Method
+        static bool CompareUserInputANDAnswer(string answer, string userInput)
+        {
+            //Compare integer input to integer answer
 
-        //    //Compare string input to string answer
+            //Compare string input to string answer
+            if (answer == userInput) return true;
+            
+            return false;
+        }
 
-        //    //Compare boolean input to boolean answer
-
-        //}
-
-        //// Answer Result Method
+        // Answer Result Method
         //static void DisplayResults(bool correct, string answer)
         //{
         //    // If statement checking for correct answer.
