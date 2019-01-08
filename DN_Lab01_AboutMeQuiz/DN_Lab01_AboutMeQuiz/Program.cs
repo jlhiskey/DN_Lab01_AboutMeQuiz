@@ -33,7 +33,7 @@ namespace DN_Lab01_AboutMeQuiz
             Console.WriteLine("Welcome to Jason's Quiz");
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
-            Console.WriteLine($"Hello {name}! Press Enter when your ready to play.");
+            Console.WriteLine($"Hello {name}! Press Enter when you're ready to play.");
             Console.ReadLine();
 
             //Starting The Game

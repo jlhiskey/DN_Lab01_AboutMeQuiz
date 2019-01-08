@@ -1,48 +1,27 @@
 
-# Calculator
- - Create a Calculator. Use everything that you have learned from the prework tutorials.
-
-- Create a very basic, 4 function calculator within a console application.
-
+# Lab 01: About Me Quiz
+ - Create an “About Me” quiz that has at least 5 different questions.
+ 
+- Each question should be something fun, unique, or interesting about yourself
 ## Specs
-- Upon completion, your calculator should contain the following:
-
-- Inside the Program.cs file of your console application you should have 4 external methods plus the Main method:
-  	- Add()
-	- Subtract()
-	- Multiply()
-	- Divide()
-- Each of these methods should take in 2 parameters, and return the solution of those 2 numbers. (i.e if you are adding 2 numbers than your return would be the sum of the 2 numbers added together. )
-
-Output to the console the answer to the proposed math problem.
+- Your solution should include the following:
+    - Main method
+    - external methods- (at least 3 non-void return types)
+    - Have different return types!
+    - At least one try/catch/finally implementation
+- When running your application, it should activate the game without any direct code manipulation
+- Stay within scope of this project. Please only use concepts and resources that we have covered so far in previous labs/lectures/assigned prework. If you are unsure if it is within scope, please ask a TA or instructor.
 
 ## Example Output
 - When you run app.
-    - Welcome to Jason's C# Calculator:
-    - Select 1 for Addition
-    - Select 2 for Subtract
-    - Select 3 for Multiplication
-    - Select 4 for Division
+    - Welcome to Jason's Quiz:
+    - What is your name?
+         - User Input 
+    - Hello {User Input}! Press Enter when you're ready to play.
+    - Five questions will then be asked each requiring user input.
+    - After each question the application will tell you if you are correct.
+    - The application will then tell you your score at the end of the quiz.
     
- - When you input:
-	- 1 
-
-   - Returns:
-       - "What numbers would you like to add together?"
-       
-       - When you input:
-       	- 1 
-       	
-       	- Returns:
-       	        - You Selected 1. You have 1 choices left.
-       	        
-       - When you input:
-            - 2
-            
-           - Returns:
-                - You Selected 2. You have 0 choices left.
-                - Your solution is 3.
-         
  
 ## Screenshot of Output
 ![solution image](./Solution.PNG)
