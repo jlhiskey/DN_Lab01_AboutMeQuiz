@@ -43,11 +43,14 @@ namespace DN_Lab01_AboutMeQuiz
                 string inputAnswer = OutputQuestionInputAnswer(questions[i]);
 
                 // Compare userInput to correct answer.
-                bool correct = CompareUserInputANDAnswer(answers[i], inputAnswer);                
+                bool correct = CompareUserInputANDAnswer(answers[i], inputAnswer);
+
+                // Show result of answer.
+                DisplayResults(correct, answers[i]);
             }
 
-            //Display total score to user
-            Console.WriteLine($"Quiz over: You scored {score}/5.");
+            //Show the users final score.
+            
         }
         
         // Question/Answer Method
@@ -74,12 +77,20 @@ namespace DN_Lab01_AboutMeQuiz
         }
 
         // Answer Result Method
-        //static void DisplayResults(bool correct, string answer)
-        //{
-        //    // If statement checking for correct answer.
-        //}
+        static void DisplayResults(bool correct, string answer)
+        {
+            // If statement checking for correct answer.
+            if (correct)
+            {
+                Console.WriteLine($"Correct! The answer is indeed {answer}!!");
+            }
+            else
+            {
+                Console.WriteLine($"Wrong! The correct answer is {answer}");
+            }
+        }
 
-        //// Score Keeper
+        // Score Keeper
         //static int scoreTracker(bool correctAnswer)
         //{
         //    // If correct add 1 to score
