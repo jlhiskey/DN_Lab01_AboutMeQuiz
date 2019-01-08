@@ -69,12 +69,28 @@ namespace DN_Lab01_AboutMeQuiz
         static string OutputQuestionInputAnswer(string question)
         {
             // Asks user question
-            Console.WriteLine($"--> {question}");
+            Console.WriteLine($"-{question}");
 
             // Saves user input
-            string answer = Console.ReadLine().ToLower();
+            try
+            {
+             string answer = Console.ReadLine().ToLower();
+                if (answer.Length == 0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                return answer;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine($"-{question}");
+                string answer = Console.ReadLine().ToLower();
+                return answer;
+            }
+            
 
-            return answer;
+            
         }
 
         // Answer Checker Method
